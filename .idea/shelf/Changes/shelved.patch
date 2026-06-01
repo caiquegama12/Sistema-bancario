@@ -1,0 +1,56 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b475d485-b1f3-48a6-8caa-d09f85aadbb7\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3,\r\n  &quot;fromUser&quot;: false\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"3ESPrZUcidAPw27sQ8UQN8pHCCq\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Application.BancoServidor.executor&quot;: &quot;Run&quot;,\r\n    &quot;Application.UsuarioCliente.executor&quot;: &quot;Run&quot;,\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,\r\n    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/caiqu/IdeaProjects/Sistema bancario/src/Main.java&quot;\r\n  }\r\n}</component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b475d485-b1f3-48a6-8caa-d09f85aadbb7\" name=\"Changes\" comment=\"\" />\r\n      <created>1780169207506</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1780169207506</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision dcd22364835db2a589fd3e1a767dfc3c5178af03)
++++ b/.idea/workspace.xml	(date 1780239670219)
+@@ -4,7 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b475d485-b1f3-48a6-8caa-d09f85aadbb7" name="Changes" comment="" />
++    <list default="true" id="b475d485-b1f3-48a6-8caa-d09f85aadbb7" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/BancoServidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BancoServidor.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -60,4 +63,15 @@
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
+Index: src/BancoServidor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.io.*;\r\nimport java.net.*;\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\n\r\npublic class BancoServidor {\r\n    private static Map<String, Double> contas = new HashMap<>();\r\n\r\n    public static void main(String[] args) {\r\n        contas.put(\"123\", 1000.0);\r\n        contas.put(\"456\", 500.0);\r\n\r\n        int porta = 5000;\r\n\r\n        try (ServerSocket servidor = new ServerSocket(porta)) {\r\n            System.out.println(\"Servidor do Banco iniciado. Escutando na porta \" + porta);\r\n\r\n            while (true) {\r\n                Socket conexao = servidor.accept();\r\n                System.out.println(\"Nova conexão de \" + conexao.getInetAddress().getHostAddress());\r\n                new Thread(new GerenciadorCliente(conexao)).start();\r\n            }\r\n        } catch (IOException e) {\r\n            System.out.println(\"Erro ao iniciar o servidor: \" + e.getMessage());\r\n        }\r\n    }\r\n\r\n    private static class GerenciadorCliente implements Runnable {\r\n    private Socket conexao;\r\n\r\n    public GerenciadorCliente(Socket conexao) {\r\n        this.conexao = conexao;\r\n    }\r\n\r\n    @Override\r\n    public void run() {\r\n        try (\r\n                BufferedReader entrada = new BufferedReader(new InputStreamReader(conexao.getInputStream()));\r\n                PrintWriter saida = new PrintWriter(conexao.getOutputStream(), true)\r\n        ) {\r\n            String dados;\r\n            while ((dados = entrada.readLine()) != null) {\r\n                String[] partes = dados.split(\";\");\r\n                int opcao = Integer.parseInt(partes[0]);\r\n                String conta = partes.length > 1 ? partes[1] : \"\";\r\n                double valor = partes.length > 2 ? Double.parseDouble(partes[2]) : 0.0;\r\n\r\n                String resposta = \"erro;Ação inválida\";\r\n                if (!contas.containsKey(conta)) {\r\n                    resposta = \"erro;Conta não encontrada\";\r\n                } else {\r\n                    if (opcao==1) {\r\n                        resposta = \"sucesso;\" + contas.get(conta);\r\n                    } else if (opcao==2) {\r\n                        if (valor > 0) {\r\n                            contas.put(conta, contas.get(conta) + valor);\r\n                            resposta = \"sucesso;\" + contas.get(conta);\r\n                        } else {\r\n                            resposta = \"erro;Valor inválido\";\r\n                        }\r\n                    } else if (opcao==3) {\r\n                        if (valor > 0 && contas.get(conta) >= valor) {\r\n                            contas.put(conta, contas.get(conta) - valor);\r\n                            resposta = \"sucesso;\" + contas.get(conta);\r\n                        } else {\r\n                            resposta = \"erro;Saldo insuficiente ou valor inválido\";\r\n                        }\r\n                    }\r\n                }\r\n                saida.println(resposta);\r\n            }\r\n        } catch (Exception e) {\r\n            System.out.println(\"Erro na conexão: \" + e.getMessage());\r\n        } finally {\r\n            try {\r\n                System.out.println(\"Conexão encerrada com \" + conexao.getInetAddress().getHostAddress());\r\n                conexao.close();\r\n            } catch (IOException e) {\r\n                e.printStackTrace();\r\n            }\r\n        }\r\n    }\r\n}\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/BancoServidor.java b/src/BancoServidor.java
+--- a/src/BancoServidor.java	(revision dcd22364835db2a589fd3e1a767dfc3c5178af03)
++++ b/src/BancoServidor.java	(date 1780178182361)
+@@ -80,5 +80,5 @@
+             }
+         }
+     }
+-}
++    }
+ }

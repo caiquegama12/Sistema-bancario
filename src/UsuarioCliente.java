@@ -6,7 +6,7 @@ public class UsuarioCliente {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite o IP do Banco (Ex: 192.168.x.x ou 127.0.0.1): ");
+        System.out.print("Digite o IP do Banco (Ex: 192.168.0.2): ");
         String host = scanner.nextLine();
         int porta = 5000;
 
@@ -55,30 +55,28 @@ public class UsuarioCliente {
                     System.out.println("Opção inválida!");
                     continue;
                 }
-
-
-String requisicao = opcao + ";" + conta + ";" + valor;
+                String requisicao = opcao + ";" + conta + ";" + valor;
                 saida.println(requisicao);
 
-String respostaStr = entrada.readLine();
+                String respostaStr = entrada.readLine();
                 if (respostaStr == null) break;
 
-String[] partesResposta = respostaStr.split(";");
-String status = partesResposta[0];
-String mensagemOuSaldo = partesResposta.length > 1 ? partesResposta[1] : "";
+                String[] partesResposta = respostaStr.split(";");
+                String status = partesResposta[0];
+                String mensagemOuSaldo = partesResposta.length > 1 ? partesResposta[1] : "";
 
                 if (status.equals("sucesso")) {
-        System.out.printf("\n[SUCESSO] Seu saldo atual é: R$ %.2f\n", Double.parseDouble(mensagemOuSaldo));
-        } else {
-        System.out.println("\n[ERRO] " + mensagemOuSaldo);
+                System.out.printf("\n[SUCESSO] Seu saldo atual é: R$ %.2f\n", Double.parseDouble(mensagemOuSaldo));
+                } else {
+                System.out.println("\n[ERRO] " + mensagemOuSaldo);
                 }
-                        }
-                        } catch (IOException e) {
+            }
+        } catch (IOException e) {
         System.out.println("Erro ao conectar ao banco: " + e.getMessage());
         }
         scanner.close();
     }
-private static void mostrarMenu() {
+    private static void mostrarMenu() {
     System.out.println("\n==============================");
     System.out.println("      CAIXA ELETRÔNICO      ");
     System.out.println("==============================");
@@ -87,7 +85,7 @@ private static void mostrarMenu() {
     System.out.println("3. Fazer Saque");
     System.out.println("4. Sair");
     System.out.println("==============================");
-}
+    }
 }
 
 

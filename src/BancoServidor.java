@@ -13,7 +13,7 @@ public class BancoServidor {
         int porta = 5000;
 
         try (ServerSocket servidor = new ServerSocket(porta)) {
-            System.out.println("Servidor do Banco iniciado. Escutando na porta " + porta);
+            System.out.println("Servidor do Banco iniciado. Executando na porta " + porta);
 
             while (true) {
                 Socket conexao = servidor.accept();
@@ -80,5 +80,5 @@ public class BancoServidor {
             }
         }
     }
-}
+    }
 }
