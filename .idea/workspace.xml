@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b475d485-b1f3-48a6-8caa-d09f85aadbb7" name="Changes" comment="" />
+    <list default="true" id="b475d485-b1f3-48a6-8caa-d09f85aadbb7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BancoServidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BancoServidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsuarioCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsuarioCliente.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
